@@ -59,11 +59,11 @@ esPrimo(numero){
 obtenerMultiplos(inicio, fin){
     let numero="";
     do{
-        inicio++;
+        
         if(inicio%3==0){
             numero+=inicio;
         }
-
+    inicio++;
 
     }while(inicio<=fin);
     return numero;
@@ -94,8 +94,8 @@ obtenerImpares(numero1, numero2){
 }
 
 let app = new App();
-console.log(app.sumatoriaSerieUno(15));
+console.log(app.sumatoriaSerieUno(21));
 console.log(app.sumatoriaSerieDos(7));
 console.log(app.esPrimo(6));
-console.log(app.obtenerMultiplos(10,25))
+console.log(app.obtenerMultiplos(20,35))
 console.log(app.obtenerImpares(10,5))
