@@ -68,6 +68,28 @@ obtenerMultiplos(inicio, fin){
     return numero;
 }
 
+obtenerImpares(numero1, numero2){
+    let inicio;
+    let fin;
+    let numero="";
+    if(numero1>numero2){
+        inicio=numero2;
+        fin=numero1;
+
+    }
+    else{
+        inicio=numero1;
+        fin=numero2;
+    }
+    for(inicio;inicio<=fin;inicio++){
+        if(inicio%2!=0){
+            numero+=inicio+ ",";
+        }
+        
+    }
+
+    return numero;
+}
 }
 
 let app = new App();
