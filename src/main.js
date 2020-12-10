@@ -82,9 +82,9 @@ obtenerImpares(numero1, numero2){
         inicio=numero1;
         fin=numero2;
     }
-    for(inicio;inicio<=fin;inicio++){
-        if(inicio%2!=0){
-            numero+=inicio+ ",";
+    for(fin;fin>=inicio;fin--){
+        if(fin%2!=0){
+            numero+=fin+ ",";
         }
         
     }
@@ -98,4 +98,4 @@ console.log(app.sumatoriaSerieUno(21));
 console.log(app.sumatoriaSerieDos(7));
 console.log(app.esPrimo(6));
 console.log(app.obtenerMultiplos(20,35))
-console.log(app.obtenerImpares(10,5))
+console.log(app.obtenerImpares(2,10))
