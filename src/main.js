@@ -88,7 +88,7 @@ obtenerImpares(numero1, numero2){
         }
         
     }
-
+    numero= numero.slice(0,-1);
     return numero;
 }
 }
