@@ -1,13 +1,8 @@
 export default class App {
 sumatoriaSerieUno(numero){
     let suma=0;
-    for (let i=1;i<=6;i++){
-        if(i<=5){
-        suma=(1/i)+suma;
-        }
-        else{
-            suma+=(1/numero);
-        }
+    for (let i=1;i<=numero;i++){
+       suma+=(1/i);
     }
    
     return suma;
