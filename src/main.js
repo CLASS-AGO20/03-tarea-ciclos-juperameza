@@ -16,7 +16,7 @@ sumatoriaSerieDos(numero){
     let suma=0;
     let i=1;
     while(i<=6){
-        i++;
+       
         switch(i){
                 case 1:
                 case 2:
@@ -27,10 +27,11 @@ sumatoriaSerieDos(numero){
                 case 5:
             suma-=(1/i);
                 break;
-            default:
+        default:
             suma+=(1/numero);
             break;
         }  
+         i++;
     }
    
     return suma;
@@ -94,7 +95,7 @@ obtenerImpares(numero1, numero2){
 
 let app = new App();
 console.log(app.sumatoriaSerieUno(15));
-console.log(app.sumatoriaSerieDos(1));
+console.log(app.sumatoriaSerieDos(7));
 console.log(app.esPrimo(6));
 console.log(app.obtenerMultiplos(10,25))
 console.log(app.obtenerImpares(10,5))
