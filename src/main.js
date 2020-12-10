@@ -55,6 +55,18 @@ esPrimo(numero){
     }while(i<numero)
     return resultado;
 }
+obtenerMultiplos(inicio, fin){
+    let numero="";
+    do{
+        inicio++;
+        if(inicio%3==0){
+            numero+=inicio;
+        }
+
+
+    }while(inicio<=fin);
+    return numero;
+}
 
 }
 
