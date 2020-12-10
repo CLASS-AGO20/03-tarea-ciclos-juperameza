@@ -23,12 +23,10 @@ sumatoriaSerieDos(numero){
                 case 4:
         suma+=(1/i);
                 break;
-
                 case 3:
                 case 5:
             suma-=(1/i);
                 break;
-                
             default:
             suma+=(1/numero);
             break;
@@ -37,10 +35,32 @@ sumatoriaSerieDos(numero){
    
     return suma;
 }
+esPrimo(numero){
+    let i=0;
+    let x=0;
+    let resultado;
+    do{
+            i++;
+            if(numero%i==0){
+                x+=1;;
+            }
+           if(x==2){
+               resultado=true;
+           }
+           else{
+               resultado=false;
+           }
+        
 
+    }while(i<numero)
+    return resultado;
+}
 
 }
 
 let app = new App();
-console.log(app.sumatoriaSerieUno(1));
+console.log(app.sumatoriaSerieUno(15));
 console.log(app.sumatoriaSerieDos(1));
+console.log(app.esPrimo(6));
+console.log(app.obtenerMultiplos(10,25))
+console.log(app.obtenerImpares(10,5))
