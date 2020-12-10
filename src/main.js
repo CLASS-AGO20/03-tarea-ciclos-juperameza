@@ -1,17 +1,5 @@
 export default class App {
-sumatoriaSerieUno(numero){
-    let suma=0;
-    for (let i=1;i<=6;i++){
-        if(i<=5){
-        suma=(1/i)+suma;
-        }
-        else{
-            suma+=(1/numero);
-        }
-    }
-   
-    return suma;
-}
+
 sumatoriaSerieDos(numero){
     let suma=0;
     let i=1;
@@ -42,5 +30,5 @@ sumatoriaSerieDos(numero){
 }
 
 let app = new App();
-console.log(app.sumatoriaSerieUno(1));
+
 console.log(app.sumatoriaSerieDos(1));
