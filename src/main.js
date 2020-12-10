@@ -10,23 +10,15 @@ sumatoriaSerieUno(numero){
 sumatoriaSerieDos(numero){
     let suma=0;
     let i=1;
-    while(i<=6){
-       
-        switch(i){
-                case 1:
-                case 2:
-                case 4:
-        suma+=(1/i);
-                break;
-                case 3:
-                case 5:
+    while(i<=numero){
+         
+        if(i%2==0||i==1){
+            suma+=(1/i);
+        }
+        else{
             suma-=(1/i);
-                break;
-        default:
-            suma+=(1/numero);
-            break;
-        }  
-         i++;
+        }
+        i++;
     }
    
     return suma;
